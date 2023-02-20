@@ -1,0 +1,81 @@
+.work {
+  margin-top: 15rem;
+}
+
+.work-text {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid orangered;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  width: fit-content;
+}
+
+.work-text p {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.work-text h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.2);
+}
+.socialmedia {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialmedia p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.icons > * {
+  font-size: 1.7rem;
+  color: white;
+  background: orangered;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 7px;
+  cursor: pointer;
+  height: 50px;
+  width: auto;
+}
+.icons > *:hover {
+  scale: 1.1;
+}
+
+.about-us {
+  background-image: url("https://images.hdqwalls.com/download/grey-material-design-4k-7l-2880x1800.jpg");
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  margin-bottom: 10rem;
+}
+.about-us p {
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .work-text h1 {
+    font-size: 3.5rem;
+  }
+  .work-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

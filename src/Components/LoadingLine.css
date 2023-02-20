@@ -1,0 +1,36 @@
+.loading-line {
+  position: relative;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fill {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: red;
+  animation: fill 5s ease-in-out forwards;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid orangered;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.about img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  outline: none;
+}
+.about h2 {
+  color: white;
+  margin: 1rem 0;
+}
+.about-content p {
+  color: rgb(255, 200, 0);
+  margin: 1rem 0;
+}
+
+.about-special {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  max-width: 1200px;
+  margin: 6rem auto;
+}
+.about-special-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-special-icons .icon {
+  color: rgb(255, 157, 0);
+}
+
+.moto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: -3rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 20rem;
+  width: 60rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  z-index: 9999;
+}
+.moto p {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  text-align: center;
+  width: 75%;
+}
+.moto h4 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+@media screen and (max-width: 1000px) {
+  .moto {
+    width: 100%;
+    bottom: -6rem;
+    height: 15rem;
+  }
+  .about-special {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin: 4rem 0;
+  }
+  .moto p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+  }
+  .moto h4 {
+    font-size: 1rem;
+  }
+  .about-special-icons .icon {
+    font-size: 36px;
+  }
+}

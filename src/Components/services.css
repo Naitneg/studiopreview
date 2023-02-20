@@ -1,0 +1,68 @@
+.services {
+  width: 80%;
+  max-width: 1250px;
+  margin: 2rem auto;
+}
+
+.services > * {
+  margin: 5rem 0;
+}
+
+.pari {
+  outline: none;
+  border-radius: 10px;
+}
+.pari img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pari-posht {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 15px 0;
+  height: 280px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.icon {
+  font-size: 4rem;
+}
+.pari-posht p {
+  text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 30px;
+  height: 45px;
+  font-size: 0;
+  line-height: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
