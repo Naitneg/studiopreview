@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { RxHamburgerMenu } from "react-icons/rx";
 import "./Navbar.css";
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const menuHandler = () => {
+    setOpenMenu(!openMenu);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +32,10 @@ const Navbar = () => {
         <Link to="/" className="navbar-brand">
           Logo
         </Link>
-        <div className="navbar-links">
+        <RxHamburgerMenu className="hamburger-menu" onClick={menuHandler} />
+        <div
+          className={!openMenu ? "navbar-links" : "navbar-links navbar-hide"}
+        >
           <Link to="home" smooth={true} duration={500} className="navbar-link">
             Home
           </Link>
