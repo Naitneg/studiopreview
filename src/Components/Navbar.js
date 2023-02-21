@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { RxHamburgerMenu } from "react-icons/rx";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { Hidden } from "@mui/material";
 import "./Navbar.css";
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -32,10 +34,16 @@ const Navbar = () => {
         <Link to="/" className="navbar-brand">
           Logo
         </Link>
-        <RxHamburgerMenu className="hamburger-menu" onClick={menuHandler} />
-        <div
-          className={!openMenu ? "navbar-links" : "navbar-links navbar-hide"}
-        >
+        {openMenu ? (
+          <Hidden smUp>
+            <CloseIcon onClick={menuHandler} />
+          </Hidden>
+        ) : (
+          <Hidden smUp>
+            <MenuIcon onClick={menuHandler} />
+          </Hidden>
+        )}
+        <div className={openMenu ? "navbar-links" : "navbar-links navbar-hide"}>
           <Link to="home" smooth={true} duration={500} className="navbar-link">
             Home
           </Link>
