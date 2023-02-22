@@ -38,13 +38,7 @@ function Workcard() {
             backgroundImage: `url("${puna.image}")`,
           }}
         >
-          <div
-            className="caption"
-            style={{
-              background: "rgba(0,0,0,0.4)",
-              width: "100%",
-            }}
-          >
+          <div className="caption">
             <h2>{puna.title}</h2>
             <p>{puna.description}</p>
           </div>

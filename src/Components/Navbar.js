@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className={navbarClass}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-brand">
+        <Link to="home" smooth={true} duration={500} className="navbar-brand">
           Logo
         </Link>
         {openMenu ? (

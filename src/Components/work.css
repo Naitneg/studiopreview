@@ -41,7 +41,6 @@
 }
 
 .icons > * {
-  font-size: 1.7rem;
   color: white;
   background: orangered;
   border-radius: 50%;
@@ -70,6 +69,17 @@
 
 @media screen and (max-width: 1000px) {
   .work-text h1 {
+    font-size: 5rem;
+  }
+  .work-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .work-text h1 {
     font-size: 3.5rem;
   }
   .work-text {
@@ -77,5 +87,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .socialmedia {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+  }
+  .icons > * {
+    font-size: 15px;
+    height: 40px;
+    margin-top: 16px;
   }
 }

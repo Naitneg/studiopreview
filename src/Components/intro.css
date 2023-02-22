@@ -59,6 +59,22 @@
     bottom: -13rem;
     border-radius: 0;
   }
+  .intro-text {
+    margin: 0;
+  }
+  .intro-text h1 {
+    font-size: 3.5rem;
+  }
+  .intro-text p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro {
+    width: 100%;
+    bottom: -13rem;
+    border-radius: 0;
+  }
   .intro-text h1 {
     font-size: 2rem;
   }
