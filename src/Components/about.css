@@ -81,6 +81,7 @@
     width: 100%;
     bottom: -1rem;
     height: 15rem;
+    border-radius: 0;
   }
   .about-special {
     display: flex;
@@ -103,8 +104,9 @@
 @media screen and (max-width: 650px) {
   .moto {
     width: 100%;
-    bottom: -1rem;
+    bottom: -5rem;
     height: 15rem;
+    border-radius: 0;
   }
   .about-special {
     display: flex;
@@ -119,5 +121,11 @@
   }
   .moto h4 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .moto {
+    bottom: -8rem;
   }
 }
