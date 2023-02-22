@@ -1,8 +1,8 @@
 .about-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-bottom: 1px solid orangered;
   width: 100%;
   max-width: 1200px;
@@ -48,6 +48,7 @@
 .moto {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: absolute;
   bottom: -3rem;
@@ -63,7 +64,7 @@
   z-index: 9999;
 }
 .moto p {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
@@ -93,9 +94,10 @@
   .moto p {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 18px;
   }
   .moto h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .about-special-icons .icon {
     font-size: 36px;
@@ -123,8 +125,10 @@
     font-size: 20px;
   }
 }
-
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
+  .about-special {
+    width: 100%;
+  }
   .moto {
     bottom: -8rem;
   }

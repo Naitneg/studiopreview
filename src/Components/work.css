@@ -60,7 +60,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 150vh;
+  height: 85rem;
   margin-bottom: 10rem;
 }
 .about-us p {
@@ -76,6 +76,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .about-us {
+    height: 75rem;
   }
 }
 @media screen and (max-width: 650px) {
@@ -97,5 +100,8 @@
     font-size: 15px;
     height: 40px;
     margin-top: 16px;
+  }
+  .about-us {
+    height: 70rem;
   }
 }
